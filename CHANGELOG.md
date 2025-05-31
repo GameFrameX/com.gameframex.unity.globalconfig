@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.6](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.0.6) (2025-05-31)
+
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/1.0.5...1.0.6)
+
 ## [1.0.5](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.0.5) (2025-01-20)
 
 [Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/1.0.4...1.0.5)
@@ -14,11 +18,15 @@
 
 ## [1.0.2](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.0.2) (2024-06-01)
 
-[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/v1.0.1...1.0.2)
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/1.0.1...1.0.2)
 
-## [v1.0.1](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/v1.0.1) (2024-05-20)
+## [1.0.1](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.0.1) (2024-05-20)
 
-[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/69a982874028476f8e2bf4811f0285540878375a...v1.0.1)
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/1.0.0...1.0.1)
+
+## [1.0.0](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.0.0) (2024-04-11)
+
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/compare/69a982874028476f8e2bf4811f0285540878375a...1.0.0)
 
 
 
