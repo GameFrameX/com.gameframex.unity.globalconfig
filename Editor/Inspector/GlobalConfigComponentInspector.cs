@@ -52,12 +52,12 @@ namespace GameFrameX.GlobalConfig.Editor
 
         private void OnEnable()
         {
-            m_CheckAppVersionUrl = serializedObject.FindProperty("m_CheckAppVersionUrl");
-            m_HostServerUrl = serializedObject.FindProperty("m_HostServerUrl");
-            m_Content = serializedObject.FindProperty("m_Content");
-            m_AOTCodeList = serializedObject.FindProperty("m_AOTCodeList");
-            m_AOTCodeLists = serializedObject.FindProperty("m_AOTCodeLists");
-            m_CheckResourceVersionUrl = serializedObject.FindProperty("m_CheckResourceVersionUrl");
+            m_CheckAppVersionUrl = serializedObject.FindProperty("m_checkAppVersionUrl");
+            m_HostServerUrl = serializedObject.FindProperty("m_hostServerUrl");
+            m_Content = serializedObject.FindProperty("m_content");
+            m_AOTCodeList = serializedObject.FindProperty("m_aotCodeList");
+            m_AOTCodeLists = serializedObject.FindProperty("m_aotCodeLists");
+            m_CheckResourceVersionUrl = serializedObject.FindProperty("m_checkResourceVersionUrl");
 
             RefreshTypeNames();
         }

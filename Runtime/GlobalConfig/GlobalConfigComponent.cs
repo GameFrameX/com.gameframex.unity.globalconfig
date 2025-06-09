@@ -15,47 +15,47 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 检测App版本地址接口
         /// </summary>
-        [SerializeField] private string m_CheckAppVersionUrl = string.Empty;
+        [SerializeField] private string m_checkAppVersionUrl = string.Empty;
 
         /// <summary>
         /// 检测App版本地址接口
         /// </summary>
         public string CheckAppVersionUrl
         {
-            get => m_CheckAppVersionUrl;
-            set => m_CheckAppVersionUrl = value;
+            get { return m_checkAppVersionUrl; }
+            set { m_checkAppVersionUrl = value; }
         }
 
         /// <summary>
         /// 检测资源版本地址接口
         /// </summary>
-        [SerializeField] private string m_CheckResourceVersionUrl = string.Empty;
+        [SerializeField] private string m_checkResourceVersionUrl = string.Empty;
 
         /// <summary>
         /// 检测资源版本地址接口
         /// </summary>
         public string CheckResourceVersionUrl
         {
-            get => m_CheckResourceVersionUrl;
-            set => m_CheckResourceVersionUrl = value;
+            get { return m_checkResourceVersionUrl; }
+            set { m_checkResourceVersionUrl = value; }
         }
 
         /// <summary>
         /// AOT代码列表
         /// </summary>
-        [SerializeField] private string m_AOTCodeList = string.Empty;
+        [SerializeField] private string m_aotCodeList = string.Empty;
 
         /// <summary>
         /// AOT补充元数据列表
         /// </summary>
-        [SerializeField] private List<string> m_AOTCodeLists = new List<string>();
+        [SerializeField] private List<string> m_aotCodeLists = new List<string>();
 
         /// <summary>
         /// 补充元数据列表
         /// </summary>
         public List<string> AOTCodeLists
         {
-            get { return m_AOTCodeLists; }
+            get { return m_aotCodeLists; }
         }
 
         /// <summary>
@@ -63,13 +63,13 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// </summary>
         public string AOTCodeList
         {
-            get => m_AOTCodeList;
+            get { return m_aotCodeList; }
             set
             {
-                m_AOTCodeList = value;
+                m_aotCodeList = value;
                 try
                 {
-                    m_AOTCodeLists = Utility.Json.ToObject<List<string>>(value);
+                    m_aotCodeLists = Utility.Json.ToObject<List<string>>(value);
                 }
                 catch (Exception e)
                 {
@@ -81,29 +81,30 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 附加内容
         /// </summary>
-        [SerializeField] private string m_Content = string.Empty;
+        [SerializeField] private string m_content = string.Empty;
 
         /// <summary>
         /// 附加内容
         /// </summary>
         public string Content
         {
-            get => m_Content;
-            set => m_Content = value;
+            get => m_content;
+            set => m_content = value;
         }
 
         /// <summary>
         /// 主机服务地址
         /// </summary>
-        [SerializeField] private string m_HostServerUrl = string.Empty;
+        [SerializeField] private string m_hostServerUrl = string.Empty;
 
         /// <summary>
         /// 主机服务地址
         /// </summary>
         public string HostServerUrl
         {
-            get => m_HostServerUrl;
-            set => m_HostServerUrl = value;
+            get { return m_hostServerUrl; }
+            set { m_hostServerUrl = value; }
+        }
         }
 
         protected override void Awake()
