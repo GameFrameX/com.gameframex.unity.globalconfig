@@ -14,12 +14,14 @@ namespace GameFrameX.GlobalConfig.Editor
         private SerializedProperty m_AOTCodeLists = null;
         private SerializedProperty m_CheckAppVersionUrl = null;
         private SerializedProperty m_CheckResourceVersionUrl = null;
+        private SerializedProperty m_OriginalData = null;
         private GUIContent m_HostServerUrlGUIContent = new GUIContent("主机服务地址");
         private GUIContent m_ContentGUIContent = new GUIContent("附加内容");
         private GUIContent m_ContentGUIAOTCodeList = new GUIContent("补充程序集列表");
         private GUIContent m_AOTCodeListsContentGUI = new GUIContent("补充元数据列表");
         private GUIContent m_CheckAppVersionUrlGUIContent = new GUIContent("检测App版本地址接口");
         private GUIContent m_CheckResourceVersionUrlGUIContent = new GUIContent("检测资源版本地址接口");
+        private GUIContent m_OriginalDataGUIContent = new GUIContent("原始数据");
 
         public override void OnInspectorGUI()
         {
@@ -35,6 +37,9 @@ namespace GameFrameX.GlobalConfig.Editor
                 EditorGUILayout.PropertyField(m_AOTCodeList, m_ContentGUIAOTCodeList, GUILayout.Height(100));
                 EditorGUILayout.PropertyField(m_Content, m_ContentGUIContent, GUILayout.Height(120));
                 EditorGUILayout.PropertyField(m_AOTCodeLists, m_AOTCodeListsContentGUI);
+                GUI.enabled = false;
+                EditorGUILayout.PropertyField(m_OriginalData, m_OriginalDataGUIContent, GUILayout.Height(120));
+                GUI.enabled = true;
             }
             EditorGUI.EndDisabledGroup();
 
@@ -58,6 +63,7 @@ namespace GameFrameX.GlobalConfig.Editor
             m_AOTCodeList = serializedObject.FindProperty("m_aotCodeList");
             m_AOTCodeLists = serializedObject.FindProperty("m_aotCodeLists");
             m_CheckResourceVersionUrl = serializedObject.FindProperty("m_checkResourceVersionUrl");
+            m_OriginalData = serializedObject.FindProperty("m_originalData");
 
             RefreshTypeNames();
         }

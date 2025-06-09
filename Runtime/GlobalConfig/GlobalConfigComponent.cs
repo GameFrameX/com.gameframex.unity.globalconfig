@@ -98,6 +98,11 @@ namespace GameFrameX.GlobalConfig.Runtime
         [SerializeField] private string m_hostServerUrl = string.Empty;
 
         /// <summary>
+        /// 原始数据
+        /// </summary>
+        [SerializeField] private string m_originalData = string.Empty;
+
+        /// <summary>
         /// 主机服务地址
         /// </summary>
         public string HostServerUrl
@@ -105,6 +110,22 @@ namespace GameFrameX.GlobalConfig.Runtime
             get { return m_hostServerUrl; }
             set { m_hostServerUrl = value; }
         }
+
+        /// <summary>
+        /// 获取原始数据
+        /// </summary>
+        public string OriginalData
+        {
+            get { return m_originalData; }
+        }
+
+        /// <summary>
+        /// 设置原始数据
+        /// </summary>
+        /// <param name="data">原始数据</param>
+        public void SetOriginalData(string data)
+        {
+            m_originalData = data;
         }
 
         protected override void Awake()
