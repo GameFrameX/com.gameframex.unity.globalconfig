@@ -3,7 +3,7 @@ namespace GameFrameX.GlobalConfig.Runtime
     /// <summary>
     /// 游戏版本信息
     /// </summary>
-    public sealed class ResponseGameAppVersion
+    public class ResponseGameAppVersion
     {
         /// <summary>
         /// 是否强制升级

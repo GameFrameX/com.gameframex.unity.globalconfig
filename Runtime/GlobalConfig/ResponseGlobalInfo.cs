@@ -3,7 +3,7 @@ namespace GameFrameX.GlobalConfig.Runtime
     /// <summary>
     /// 全局信息响应对象
     /// </summary>
-    public sealed class ResponseGlobalInfo
+    public class ResponseGlobalInfo
     {
         /// <summary>
         /// 检测程序版本地址
