@@ -128,6 +128,35 @@ namespace GameFrameX.GlobalConfig.Runtime
             m_originalData = data;
         }
 
+        /// <summary>
+        /// 获取全局配置信息
+        /// </summary>
+        /// <returns>返回全局配置信息对象</returns>
+        public ResponseGlobalInfo GlobalInfo
+        {
+            get { return m_responseGlobalInfo; }
+        }
+
+        /// <summary>
+        /// 全局配置信息对象
+        /// </summary>
+        /// <remarks>
+        /// 用于存储从服务器获取的全局配置数据，包含游戏运行所需的各种全局参数
+        /// </remarks>
+        private ResponseGlobalInfo m_responseGlobalInfo;
+
+        /// <summary>
+        /// 设置全局配置信息
+        /// </summary>
+        /// <param name="globalInfo">全局配置信息对象，包含从服务器获取的配置数据</param>
+        /// <remarks>
+        /// 该方法用于更新全局配置信息，通常在从服务器获取新的配置数据后调用
+        /// </remarks>
+        public void SetGlobalConfig(ResponseGlobalInfo globalInfo)
+        {
+            m_responseGlobalInfo = globalInfo;
+        }
+
         protected override void Awake()
         {
             IsAutoRegister = false;
