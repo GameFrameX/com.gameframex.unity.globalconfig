@@ -24,5 +24,10 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// 更新公告
         /// </summary>
         public string UpdateAnnouncement { get; set; }
+
+        /// <summary>
+        /// 更新标题
+        /// </summary>
+        public string UpdateTitle { get; set; }
     }
 }
