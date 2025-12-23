@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.1.0...1.2.0) (2025-12-23)
+
+
+### Features
+
+* **ci:** change ci ([ec0fcff](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/ec0fcffc8008c9228a06811c2770c09dce8c450a))
+
 # Changelog
 
 ## [1.1.0](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/tree/1.1.0) (2025-08-11)
