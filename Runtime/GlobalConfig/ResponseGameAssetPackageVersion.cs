@@ -21,6 +21,11 @@ namespace GameFrameX.GlobalConfig.Runtime
         public string AssetPackageName { get; set; }
 
         /// <summary>
+        /// 资源包路径
+        /// </summary>
+        public string AssetPackagePath { get; set; }
+
+        /// <summary>
         /// 平台
         /// </summary>
         public string Platform { get; set; }
