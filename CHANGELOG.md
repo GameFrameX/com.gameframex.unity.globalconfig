@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.2.0...1.3.0) (2026-01-26)
+
+
+### Features
+
+* **GlobalConfig:** 为资源包版本响应类添加资源包路径属性 ([8d4fba0](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/8d4fba0195b7026bf2ce4c83ce1053eaf1682267))
+
 # [1.2.0](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.1.0...1.2.0) (2025-12-23)
 
 
