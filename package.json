@@ -2,7 +2,7 @@
   "name": "com.gameframex.unity.globalconfig",
   "displayName": "Game Frame X Global Config",
   "category": "GameFrameX",
-  "description": "独立游戏前后端一体化解决方案,独立游戏开发者的圆梦大使。\n文档地址: https://gameframex.doc.alianblank.com \n Game Frame X Global Config组件 - 全局配置管理器，主要记录从服务器获取的配置信息.",
+  "description": "GameFrameX GlobalConfig — Unity global configuration package. Stores and manages global game configuration retrieved from remote servers, including version check URLs, AOT metadata lists for hybridclr, and host server addresses. Provides request/response model classes for app version, asset package version, and global info queries. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX GlobalConfig — Unity 全局配置功能包。存储和管理从远程服务器获取的全局游戏配置，包括版本检测地址、hybridclr 的 AOT 元数据列表和主机服务器地址。提供应用版本、资源包版本和全局信息查询的请求/响应模型类。文档：https://gameframex.doc.alianblank.com",
   "version": "1.3.0",
   "unity": "2019.4",
   "keywords": [
