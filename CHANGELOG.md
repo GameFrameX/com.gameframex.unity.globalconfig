@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.3.0...1.3.1) (2026-05-28)
+
+
+### Bug Fixes
+
+* **ci:** 统一 .github 工作流配置 ([0d39eac](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/0d39eacbfb9ffab2345b44b79b3114f984394292))
+
 # [1.3.0](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.2.0...1.3.0) (2026-01-26)
 
 
