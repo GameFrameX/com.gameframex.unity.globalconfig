@@ -73,7 +73,7 @@ namespace GameFrameX.GlobalConfig.Runtime
                 }
                 catch (Exception e)
                 {
-                    Log.Fatal(e);
+                    Log.Error(e);
                 }
             }
         }
@@ -125,6 +125,11 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <param name="data">原始数据</param>
         public void SetOriginalData(string data)
         {
+            if (data == null)
+            {
+                throw new ArgumentNullException(nameof(data));
+            }
+
             m_originalData = data;
         }
 
@@ -154,6 +159,11 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// </remarks>
         public void SetGlobalConfig(ResponseGlobalInfo globalInfo)
         {
+            if (globalInfo == null)
+            {
+                throw new ArgumentNullException(nameof(globalInfo));
+            }
+
             m_responseGlobalInfo = globalInfo;
         }
 
