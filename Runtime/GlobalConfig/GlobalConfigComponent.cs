@@ -9,7 +9,7 @@ namespace GameFrameX.GlobalConfig.Runtime
     /// 全局配置组件。
     /// </summary>
     [DisallowMultipleComponent]
-    [AddComponentMenu("Game Framework/Global Config")]
+    [AddComponentMenu("GameFrameX/Global Config")]
     public sealed class GlobalConfigComponent : GameFrameworkComponent
     {
         /// <summary>
