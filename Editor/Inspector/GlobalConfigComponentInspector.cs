@@ -29,14 +29,16 @@ namespace GameFrameX.GlobalConfig.Editor
 
             serializedObject.Update();
 
-            EditorGUI.BeginDisabledGroup(EditorApplication.isPlayingOrWillChangePlaymode & Application.isPlaying);
+            EditorGUI.BeginDisabledGroup(EditorApplication.isPlayingOrWillChangePlaymode && Application.isPlaying);
             {
                 EditorGUILayout.PropertyField(m_HostServerUrl, m_HostServerUrlGUIContent);
                 EditorGUILayout.PropertyField(m_CheckAppVersionUrl, m_CheckAppVersionUrlGUIContent);
                 EditorGUILayout.PropertyField(m_CheckResourceVersionUrl, m_CheckResourceVersionUrlGUIContent);
                 EditorGUILayout.PropertyField(m_AOTCodeList, m_ContentGUIAOTCodeList, GUILayout.Height(100));
                 EditorGUILayout.PropertyField(m_Content, m_ContentGUIContent, GUILayout.Height(120));
+                GUI.enabled = false;
                 EditorGUILayout.PropertyField(m_AOTCodeLists, m_AOTCodeListsContentGUI);
+                GUI.enabled = true;
                 GUI.enabled = false;
                 EditorGUILayout.PropertyField(m_OriginalData, m_OriginalDataGUIContent, GUILayout.Height(120));
                 GUI.enabled = true;
