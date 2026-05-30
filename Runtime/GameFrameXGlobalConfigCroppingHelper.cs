@@ -13,6 +13,9 @@ namespace GameFrameX.GlobalConfig.Runtime
             _ = typeof(ResponseGameAppVersion);
             _ = typeof(ResponseGlobalInfo);
             _ = typeof(ResponseGameAssetPackageVersion);
+            _ = typeof(RequestGlobalInfo);
+            _ = typeof(RequestGameAppVersion);
+            _ = typeof(RequestGameAssetPackageVersion);
         }
     }
 }
