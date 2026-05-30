@@ -1,37 +1,82 @@
-using System;
+using GameFrameX.GlobalConfig.Runtime;
 using NUnit.Framework;
 
 namespace GameFrameX.GlobalConfig.Tests
 {
     internal class UnitTests
     {
-        private DateTime dateTime, dateTime1;
-
-        [SetUp]
-        public void Setup()
+        [Test]
+        public void ResponseGlobalInfo_DefaultValues_AreNull()
         {
-            dateTime = DateTime.Now;
-            dateTime1 = DateTime.Now.AddHours(1);
+            var response = new ResponseGlobalInfo();
+            Assert.IsNull(response.CheckAppVersionUrl);
+            Assert.IsNull(response.CheckResourceVersionUrl);
+            Assert.IsNull(response.AOTCodeList);
+            Assert.IsNull(response.Content);
         }
 
-        // Here is an example of a unit test for the IsUnixSameDay method
         [Test]
-        public void TestIsUnixSameDay()
+        public void ResponseGlobalInfo_PropertiesCanBeSet()
         {
-            // Arrange
-            // long timestamp1 = 1617842400; // April 7, 2021 12:00:00 AM UTC
-            // long timestamp2 = 1617896400; // April 7, 2021 12:00:00 PM UTC
-
-            // Act
+            var response = new ResponseGlobalInfo
+            {
+                CheckAppVersionUrl = "https://example.com/app",
+                CheckResourceVersionUrl = "https://example.com/res",
+                AOTCodeList = "[\"Assembly\"]",
+                Content = "extra"
+            };
+            Assert.AreEqual("https://example.com/app", response.CheckAppVersionUrl);
+            Assert.AreEqual("https://example.com/res", response.CheckResourceVersionUrl);
+            Assert.AreEqual("[\"Assembly\"]", response.AOTCodeList);
+            Assert.AreEqual("extra", response.Content);
         }
 
+        [Test]
+        public void ResponseGameAppVersion_DefaultValues()
+        {
+            var response = new ResponseGameAppVersion();
+            Assert.IsFalse(response.IsForce);
+            Assert.IsFalse(response.IsUpgrade);
+            Assert.IsNull(response.AppDownloadUrl);
+            Assert.IsNull(response.UpdateAnnouncement);
+            Assert.IsNull(response.UpdateTitle);
+        }
 
         [Test]
-        public void Test1()
+        public void ResponseGameAssetPackageVersion_DefaultValues_AreNull()
         {
-            Assert.That(dateTime1.Year, Is.EqualTo(dateTime.Year));
-            Assert.That(dateTime1.Month, Is.EqualTo(dateTime.Month));
-            Assert.That(dateTime1.Day, Is.EqualTo(dateTime.Day));
+            var response = new ResponseGameAssetPackageVersion();
+            Assert.IsNull(response.Language);
+            Assert.IsNull(response.Version);
+            Assert.IsNull(response.AssetPackageName);
+            Assert.IsNull(response.AssetPackagePath);
+            Assert.IsNull(response.Platform);
+            Assert.IsNull(response.RootPath);
+            Assert.IsNull(response.PackageName);
+            Assert.IsNull(response.AppVersion);
+            Assert.IsNull(response.Channel);
+        }
+
+        [Test]
+        public void RequestGameAssetPackageVersion_InheritsRequestBase()
+        {
+            var request = new RequestGameAssetPackageVersion
+            {
+                Language = "zh",
+                AppVersion = "1.0",
+                Platform = "Android",
+                PackageName = "com.test",
+                Channel = "default",
+                SubChannel = "sub",
+                AssetPackageName = "main"
+            };
+            Assert.AreEqual("zh", request.Language);
+            Assert.AreEqual("1.0", request.AppVersion);
+            Assert.AreEqual("Android", request.Platform);
+            Assert.AreEqual("com.test", request.PackageName);
+            Assert.AreEqual("default", request.Channel);
+            Assert.AreEqual("sub", request.SubChannel);
+            Assert.AreEqual("main", request.AssetPackageName);
         }
     }
 }
