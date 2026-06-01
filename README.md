@@ -4,7 +4,7 @@
   # GameFrameX GlobalConfig
 
   [![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.globalconfig)](https://github.com/GameFrameX/com.gameframex.unity.globalconfig/releases)
-  [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
+  [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE.md)
   [![Documentation](https://img.shields.io/badge/docs-gameframex-blue.svg)](https://gameframex.doc.alianblank.com)
 
   All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
@@ -71,4 +71,4 @@ See [CHANGELOG.md](CHANGELOG.md) for details.
 
 ## License
 
-This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
+This project is licensed under the Apache License 2.0 - see [LICENSE.md](LICENSE.md) for details.
