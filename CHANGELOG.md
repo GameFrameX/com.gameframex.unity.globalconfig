@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.3.1...1.3.2) (2026-06-01)
+
+
+### Bug Fixes
+
+* **cropping:** 补充 Request 类型到裁剪保护列表 ([f97709d](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/f97709d9a99167f1602fce6332b7597944eb549f))
+* **global-config:** 修复 Log.Fatal 及公共 API 参数验证 ([4df59a4](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/4df59a4422b342dd79ad4901971e5467daaa020e))
+* **inspector:** AOTCodeLists 改为只读并使用逻辑运算符 ([6d712b4](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/6d712b41ab531658a3bd80629e0a979b20586eb8))
+
 ## [1.3.1](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.3.0...1.3.1) (2026-05-28)
 
 
