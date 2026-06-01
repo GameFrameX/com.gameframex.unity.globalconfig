@@ -71,4 +71,4 @@ See [CHANGELOG.md](CHANGELOG.md) for details.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see [LICENSE.md](LICENSE.md) for details.
+This project is licensed - see [LICENSE.md](LICENSE.md) for details.
