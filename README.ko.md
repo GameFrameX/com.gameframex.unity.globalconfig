@@ -32,35 +32,6 @@ GameFrameX GlobalConfig 컴포넌트 - 서버에서 가져온 구성 정보를 �
 - **사용자 정의 콘텐츠** - 게임 내 표시 또는 비즈니스 로직을 위한 추가 콘텐츠 및 데이터 저장
 - **호스트 서버 URL** - 백엔드 서버 연결용 호스트 서버 URL 저장
 
-## 설치
-
-### Git URL을 통해 설치 (권장)
-
-1. Unity 에디터에서 Package Manager 열기
-2. "+" 버튼을 클릭하고 "Add package from git URL" 선택
-3. 다음 URL 입력:
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git
-   ```
-
-### manifest.json을 통해 설치
-
-프로젝트의 `Packages/manifest.json`에 다음을 추가:
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.globalconfig": "https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git"
-  }
-}
-```
-
-### 수동 설치
-
-1. 최신 릴리스 패키지 다운로드
-2. 프로젝트의 `Packages` 디렉토리에 압축 해제
-3. Unity가 자동으로 패키지를 인식하고 로드합니다
-
 ## 빠른 시작
 
 ### 설치
@@ -97,6 +68,21 @@ Then add the package to `dependencies`:
 
 자세한 내용은 [CHANGELOG.md](CHANGELOG.md)를 참조하세요.
 
+
+## 의존성
+
+| 패키지 | 설명 |
+|--------|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.web` | 1.1.2 |
+
+## 문서 및 자료
+
+- [문서](https://gameframex.doc.alianblank.com)
+
+## 커뮤니티 및 지원
+
+- QQ 그룹: 467608841 / 233840761
 ## 라이선스
 
 자세한 내용은 [LICENSE.md](LICENSE.md) 파일을 참조하세요.

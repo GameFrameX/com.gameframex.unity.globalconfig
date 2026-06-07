@@ -32,35 +32,6 @@ GameFrameX GlobalConfig コンポーネント - サーバーから取得した�
 - **カスタムコンテンツ** - ゲーム内表示やビジネスロジック用の追加コンテンツやデータの保存
 - **ホストサーバー URL** - バックエンドサーバー接続用のホストサーバーURLの保存
 
-## インストール
-
-### Git URL 経由（推奨）
-
-1. Unity エディタで Package Manager を開く
-2. "+" ボタンをクリックし "Add package from git URL" を選択
-3. 以下の URL を入力：
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git
-   ```
-
-### manifest.json 経由
-
-プロジェクトの `Packages/manifest.json` に以下を追加：
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.globalconfig": "https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git"
-  }
-}
-```
-
-### 手動インストール
-
-1. 最新のリリースパッケージをダウンロード
-2. プロジェクトの `Packages` ディレクトリに展開
-3. Unity が自動的にパッケージを認識して読み込みます
-
 ## クイックスタート
 
 ### インストール
@@ -97,6 +68,21 @@ Then add the package to `dependencies`:
 
 詳細は [CHANGELOG.md](CHANGELOG.md) をご覧ください。
 
+
+## 依存関係
+
+| パッケージ | 説明 |
+|----------|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.web` | 1.1.2 |
+
+## ドキュメントとリソース
+
+- [ドキュメント](https://gameframex.doc.alianblank.com)
+
+## コミュニティとサポート
+
+- QQグループ: 467608841 / 233840761
 ## ライセンス
 
 詳しくは [LICENSE.md](LICENSE.md) をご参照ください。

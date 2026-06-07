@@ -32,35 +32,6 @@ GameFrameX GlobalConfig 组件 - 全局配置管理器，主要记录从服务�
 - **自定义内容** - 存储附加内容或数据，用于游戏内显示或其他业务逻辑
 - **主机服务 URL** - 存储主机服务的 URL，用作连接后端服务器的地址
 
-## 安装
-
-### 通过 Git URL 安装（推荐）
-
-1. 在 Unity 编辑器中打开 Package Manager
-2. 点击 "+" 按钮选择 "Add package from git URL"
-3. 输入以下 URL：
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git
-   ```
-
-### 通过 manifest.json 安装
-
-在项目的 `Packages/manifest.json` 文件中添加：
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.globalconfig": "https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git"
-  }
-}
-```
-
-### 手动安装
-
-1. 下载最新版本发布包
-2. 解压到项目的 `Packages` 目录下
-3. Unity 会自动识别并加载包
-
 ## 快速开始
 
 ### 安装
@@ -97,6 +68,21 @@ Then add the package to `dependencies`:
 
 详见 [CHANGELOG.md](CHANGELOG.md)。
 
+
+## 依赖
+
+| 包 | 说明 |
+|----|------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.web` | 1.1.2 |
+
+## 文档与资源
+
+- [官方文档](https://gameframex.doc.alianblank.com)
+
+## 社区与支持
+
+- QQ群: 467608841 / 233840761
 ## 开源协议
 
 详见 [LICENSE.md](LICENSE.md) 文件。

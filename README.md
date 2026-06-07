@@ -32,35 +32,6 @@ GameFrameX GlobalConfig Component - A global configuration manager that stores c
 - **Custom Content** - Store additional content or data for in-game display or business logic
 - **Host Server URL** - Store the host server URL for backend server connections
 
-## Installation
-
-### Via Git URL (Recommended)
-
-1. Open Package Manager in Unity Editor
-2. Click the "+" button and select "Add package from git URL"
-3. Enter the following URL:
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git
-   ```
-
-### Via manifest.json
-
-Add the following to your project's `Packages/manifest.json`:
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.globalconfig": "https://github.com/GameFrameX/com.gameframex.unity.globalconfig.git"
-  }
-}
-```
-
-### Manual Installation
-
-1. Download the latest release package
-2. Extract it to your project's `Packages` directory
-3. Unity will automatically recognize and load the package
-
 ## Quick Start
 
 ### Installation
@@ -98,6 +69,21 @@ Then add the package to `dependencies`:
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 
+
+## Dependencies
+
+| Package | Description |
+|---------|-------------|
+| `com.gameframex.unity` | 1.1.1 |
+| `com.gameframex.unity.web` | 1.1.2 |
+
+## Documentation & Resources
+
+- [Documentation](https://gameframex.doc.alianblank.com)
+
+## Community & Support
+
+- QQ Group: 467608841 / 233840761
 ## License
 
 This project is licensed - see [LICENSE.md](LICENSE.md) for details.
