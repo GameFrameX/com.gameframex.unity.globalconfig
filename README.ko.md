@@ -20,6 +20,7 @@
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | **한국어**
 
 </div>
+
 ## 프로젝트 개요
 
 GameFrameX GlobalConfig 컴포넌트 - 서버에서 가져온 구성 정보를 기록하는 전역 구성 관리자입니다. 애플리케이션 버전 확인 URL, 리소스 버전 확인 URL 및 기타 전역적으로 액세스 가능한 구성 데이터를 관리합니다.

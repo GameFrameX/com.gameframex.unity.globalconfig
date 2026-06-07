@@ -20,6 +20,7 @@
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | **日本語** | [한국어](README.ko.md)
 
 </div>
+
 ## プロジェクト概要
 
 GameFrameX GlobalConfig コンポーネント - サーバーから取得した設定情報を記録するグローバル設定マネージャー。アプリケーションバージョンチェックURL、リソースバージョンチェックURL、およびその他のグローバルにアクセス可能な設定データを管理します。

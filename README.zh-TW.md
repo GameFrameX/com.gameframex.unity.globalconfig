@@ -20,6 +20,7 @@
 [English](README.md) | [简体中文](README.zh-CN.md) | **繁體中文** | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 </div>
+
 ## 項目簡介
 
 GameFrameX GlobalConfig 元件 - 全域設定管理器，主要記錄從伺服器取得的設定資訊。管理應用程式版本檢查 URL、資源版本檢查 URL 以及其他全域存取的設定資料。

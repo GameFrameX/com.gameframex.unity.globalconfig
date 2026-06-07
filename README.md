@@ -20,6 +20,7 @@ All-in-One Solution for Indie Game Development · Empowering Indie Developers' D
 **English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 </div>
+
 ## Project Overview
 
 GameFrameX GlobalConfig Component - A global configuration manager that stores configuration information retrieved from the server. It manages application version check URLs, resource version check URLs, and other globally accessible configuration data.

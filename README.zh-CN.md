@@ -20,6 +20,7 @@
 [English](README.md) | **简体中文** | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 </div>
+
 ## 项目简介
 
 GameFrameX GlobalConfig 组件 - 全局配置管理器，主要记录从服务器获取的配置信息。管理应用程序版本检查 URL、资源版本检查 URL 以及其他全局访问的配置数据。
