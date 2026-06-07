@@ -93,11 +93,10 @@ Then add the package to `dependencies`:
 }
 ```
 
-
 ## 更新日誌
 
 詳見 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 開源協議
 
-本專案基於 MIT 協議開源，詳見 [LICENSE.md](LICENSE.md)。
+詳見 [LICENSE.md](LICENSE.md) 檔案。
