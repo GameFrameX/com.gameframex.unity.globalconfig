@@ -63,12 +63,36 @@ Add the following to your project's `Packages/manifest.json`:
 
 ## Quick Start
 
-### Configuration
+### Installation
 
-1. **Add Component**: Add `GlobalConfigComponent` to any GameObject in your Unity scene
-2. **Set Properties**: Configure `CheckAppVersionUrl`, `CheckResourceVersionUrl`, `Content`, and `HostServerUrl` values in the Unity Inspector panel, or set them dynamically via code at runtime
-3. **Version Management**: Use `CheckAppVersionUrl` and `CheckResourceVersionUrl` to manage game version control and resource update workflows
-4. **Global Access**: Access the `GlobalConfigComponent` instance from anywhere in your game to retrieve global configuration information
+Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
+
+`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
+
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.globalconfig": "1.3.2"
+  }
+}
+```
+
 
 ## Changelog
 

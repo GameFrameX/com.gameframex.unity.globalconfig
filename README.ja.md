@@ -63,12 +63,36 @@ GameFrameX GlobalConfig コンポーネント - サーバーから取得した�
 
 ## クイックスタート
 
-### 設定
+### インストール
 
-1. **コンポーネントの追加**：`GlobalConfigComponent` をUnityシーンの任意のGameObjectに追加
-2. **プロパティの設定**：Unity Inspector パネルで `CheckAppVersionUrl`、`CheckResourceVersionUrl`、`Content`、`HostServerUrl` の値を設定、またはコードで実行時に動的に設定
-3. **バージョン管理**：`CheckAppVersionUrl` と `CheckResourceVersionUrl` を使用してゲームのバージョン管理とリソース更新ワークフローを管理
-4. **グローバルアクセス**：ゲーム内のどこからでも `GlobalConfigComponent` インスタンスにアクセスしてグローバル設定情報を取得
+Unity プロジェクトの `Packages/manifest.json` を編集し、`scopedRegistries` セクションを追加してください：
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
+
+`scopes` は、どのパッケージをこのレジストリから解決するかを制御します。`com.gameframex` で始まるパッケージのみがこのレジストリから取得されます。
+
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.globalconfig": "1.3.2"
+  }
+}
+```
+
 
 ## 変更履歴
 

@@ -63,12 +63,36 @@ GameFrameX GlobalConfig 元件 - 全域設定管理器，主要記錄從伺服�
 
 ## 快速開始
 
-### 設定
+### 安裝
 
-1. **新增元件**：將 `GlobalConfigComponent` 作為元件新增到 Unity 場景中的任意一個遊戲物件上
-2. **設定屬性**：在 Unity 的 Inspector 面板中設定 `CheckAppVersionUrl`、`CheckResourceVersionUrl`、`Content` 和 `HostServerUrl` 的值，或者透過程式碼在執行時動態設定
-3. **版本管理**：使用 `CheckAppVersionUrl` 和 `CheckResourceVersionUrl` 來管理遊戲的版本控制和資源更新流程
-4. **全域存取**：可以在遊戲的任何地方存取 `GlobalConfigComponent` 實例來取得所需的全域設定資訊
+編輯 Unity 專案的 `Packages/manifest.json`，添加 `scopedRegistries` 部分：
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
+
+`scopes` 控制哪些套件透過此註冊表解析。只有以 `com.gameframex` 開頭的套件才會從這個註冊表取得。
+
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.globalconfig": "1.3.2"
+  }
+}
+```
+
 
 ## 更新日誌
 

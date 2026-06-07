@@ -63,12 +63,36 @@ GameFrameX GlobalConfig 컴포넌트 - 서버에서 가져온 구성 정보를 �
 
 ## 빠른 시작
 
-### 구성
+### 설치
 
-1. **컴포넌트 추가**：`GlobalConfigComponent`를 Unity 씬의 아무 GameObject에 추가
-2. **속성 설정**：Unity Inspector 패널에서 `CheckAppVersionUrl`、`CheckResourceVersionUrl`、`Content`、`HostServerUrl` 값을 설정하거나 코드를 통해 런타임에 동적으로 설정
-3. **버전 관리**：`CheckAppVersionUrl`과 `CheckResourceVersionUrl`을 사용하여 게임의 버전 관리 및 리소스 업데이트 워크플로 관리
-4. **전역 액세스**：게임 내 어디서든 `GlobalConfigComponent` 인스턴스에 액세스하여 전역 구성 정보 가져오기
+Unity 프로젝트의 `Packages/manifest.json`을 편집하여 `scopedRegistries` 섹션을 추가하세요:
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
+
+`scopes`는 이 레지스트리를 통해 어떤 패키지를 해석할지 제어합니다. `com.gameframex`로 시작하는 패키지만 이 레지스트리에서 가져옵니다.
+
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.globalconfig": "1.3.2"
+  }
+}
+```
+
 
 ## 변경 로그
 
