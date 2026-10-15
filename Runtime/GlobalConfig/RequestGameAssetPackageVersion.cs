@@ -8,6 +8,7 @@
         /// <summary>
         /// 资源包名称
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string AssetPackageName { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace GameFrameX.GlobalConfig.Runtime
     /// </summary>
     [DisallowMultipleComponent]
     [AddComponentMenu("GameFrameX/Global Config")]
+    [GameFrameXAutoComponent(500)]
     public sealed class GlobalConfigComponent : GameFrameworkComponent
     {
         /// <summary>
@@ -20,6 +21,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 检测App版本地址接口
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string CheckAppVersionUrl
         {
             get { return m_checkAppVersionUrl; }
@@ -34,6 +36,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 检测资源版本地址接口
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string CheckResourceVersionUrl
         {
             get { return m_checkResourceVersionUrl; }
@@ -53,6 +56,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 补充元数据列表
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public List<string> AOTCodeLists
         {
             get { return m_aotCodeLists; }
@@ -61,6 +65,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// AOT代码列表
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string AOTCodeList
         {
             get { return m_aotCodeList; }
@@ -86,6 +91,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 附加内容
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string Content
         {
             get => m_content;
@@ -105,6 +111,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 主机服务地址
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string HostServerUrl
         {
             get { return m_hostServerUrl; }
@@ -114,6 +121,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 获取原始数据
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string OriginalData
         {
             get { return m_originalData; }
@@ -123,6 +131,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// 设置原始数据
         /// </summary>
         /// <param name="data">原始数据</param>
+        [UnityEngine.Scripting.Preserve]
         public void SetOriginalData(string data)
         {
             if (data == null)
@@ -137,6 +146,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// 获取全局配置信息
         /// </summary>
         /// <returns>返回全局配置信息对象</returns>
+        [UnityEngine.Scripting.Preserve]
         public ResponseGlobalInfo GlobalInfo
         {
             get { return m_responseGlobalInfo; }
@@ -157,6 +167,7 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <remarks>
         /// 该方法用于更新全局配置信息，通常在从服务器获取新的配置数据后调用
         /// </remarks>
+        [UnityEngine.Scripting.Preserve]
         public void SetGlobalConfig(ResponseGlobalInfo globalInfo)
         {
             if (globalInfo == null)

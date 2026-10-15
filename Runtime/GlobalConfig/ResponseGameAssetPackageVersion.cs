@@ -8,46 +8,55 @@ namespace GameFrameX.GlobalConfig.Runtime
         /// <summary>
         /// 语言
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string Language { get; set; }
 
         /// <summary>
         /// 资源版本
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string Version { get; set; }
 
         /// <summary>
         /// 资源包名称
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string AssetPackageName { get; set; }
 
         /// <summary>
         /// 资源包路径
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string AssetPackagePath { get; set; }
 
         /// <summary>
         /// 平台
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string Platform { get; set; }
 
         /// <summary>
         /// 下载根路径
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string RootPath { get; set; }
 
         /// <summary>
         /// 包名
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string PackageName { get; set; }
 
         /// <summary>
         /// 游戏版本
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string AppVersion { get; set; }
 
         /// <summary>
         /// 渠道名称
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public string Channel { get; set; }
     }
 }
