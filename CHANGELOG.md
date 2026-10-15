@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.3.2...1.3.3) (2026-10-15)
+
+
+### Bug Fixes
+
+* **runtime:** 补全 Preserve 防裁剪并对齐核心依赖 ([492d8bd](https://github.com/gameframex/com.gameframex.unity.globalconfig/commit/492d8bdb95f4c2b1fc96ab72cb7a882c609b6f00))
+
 ## [1.3.2](https://github.com/gameframex/com.gameframex.unity.globalconfig/compare/1.3.1...1.3.2) (2026-06-01)
 
 
